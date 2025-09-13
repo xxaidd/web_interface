@@ -4,3 +4,59 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+:root
+{
+    --dark: #614a3c;
+    --light: #b08968;
+    --cream: #ddb892;
+    --faint: #e6ccb2;
+    --pale: #ede0d4;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 8px;
+}
+
+.header .logo
+{
+    color: var(--pale);
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.header-links
+{
+    display: flex;
+    gap: 16px;
+    color: var(--faint);
+}
+
+.content
+{
+    display: flex;
+    background-color: var(--dark);
+}
+
+.examples
+{
+    display: flex;
+}
+
+
