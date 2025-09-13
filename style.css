@@ -7,6 +7,8 @@
 
 :root
 {
+    --black: #443a31;
+    --darker: #362417;
     --dark: #614a3c;
     --light: #b08968;
     --cream: #ddb892;
@@ -28,10 +30,10 @@ ul
 .header
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 8px 128px;
     align-items: center;
     background-color: var(--dark);
-    padding: 8px;
 }
 
 .header .logo
@@ -51,7 +53,50 @@ ul
 .content
 {
     display: flex;
+    justify-content: space-between;
+    padding: 32px 128px;
     background-color: var(--dark);
+}
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container h1
+{
+    font-size: 48px;
+    color: var(--pale);
+    font-weight: 900;
+}
+
+.container p
+{
+    font-size: 16px;
+    color: var(--faint);
+    width: 256px;
+}
+
+.container button
+{
+    width: 200px;
+    height: 32px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--darker);
+    border-radius: 10px;
+    border: 2px solid var(--black);
+    background-color: var(--light);
+}
+
+.content img
+{
+    width: 320px;
+    height: auto;
+    border-radius: 16px;
+    border: 8px solid var(--black);
 }
 
 .examples
